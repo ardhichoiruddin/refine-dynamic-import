@@ -10,7 +10,7 @@ import {
 import { useMany, type BaseRecord } from "@refinedev/core";
 import { Space, Table } from "antd";
 
-export const BlogPostList = () => {
+const BlogPostList = () => {
   const { tableProps } = useTable({
     syncWithLocation: true,
   });
@@ -71,3 +71,5 @@ export const BlogPostList = () => {
     </List>
   );
 };
+
+export default BlogPostList;

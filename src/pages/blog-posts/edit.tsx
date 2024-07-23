@@ -2,7 +2,7 @@ import { Edit, useForm, useSelect } from "@refinedev/antd";
 import MDEditor from "@uiw/react-md-editor";
 import { Form, Input, Select } from "antd";
 
-export const BlogPostEdit = () => {
+const BlogPostEdit = () => {
   const { formProps, saveButtonProps, queryResult, formLoading } = useForm({});
 
   const blogPostsData = queryResult?.data?.data;
@@ -76,3 +76,5 @@ export const BlogPostEdit = () => {
     </Edit>
   );
 };
+
+export default BlogPostEdit;

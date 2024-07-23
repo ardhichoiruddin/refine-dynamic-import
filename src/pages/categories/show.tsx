@@ -4,7 +4,7 @@ import { Typography } from "antd";
 
 const { Title } = Typography;
 
-export const CategoryShow = () => {
+const CategoryShow = () => {
   const { queryResult } = useShow({});
   const { data, isLoading } = queryResult;
 
@@ -19,3 +19,5 @@ export const CategoryShow = () => {
     </Show>
   );
 };
+
+export default CategoryShow;

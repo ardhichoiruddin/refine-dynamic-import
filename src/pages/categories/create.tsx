@@ -1,7 +1,7 @@
 import { Create, useForm } from "@refinedev/antd";
 import { Form, Input } from "antd";
 
-export const CategoryCreate = () => {
+const CategoryCreate = () => {
   const { formProps, saveButtonProps } = useForm({});
 
   return (
@@ -22,3 +22,5 @@ export const CategoryCreate = () => {
     </Create>
   );
 };
+
+export default CategoryCreate;

@@ -4,7 +4,7 @@ import { Typography } from "antd";
 
 const { Title } = Typography;
 
-export const BlogPostShow = () => {
+const BlogPostShow = () => {
   const { queryResult } = useShow({});
   const { data, isLoading } = queryResult;
 
@@ -39,3 +39,5 @@ export const BlogPostShow = () => {
     </Show>
   );
 };
+
+export default BlogPostShow;

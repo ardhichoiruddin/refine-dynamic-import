@@ -8,7 +8,7 @@ import {
 import type { BaseRecord } from "@refinedev/core";
 import { Space, Table } from "antd";
 
-export const CategoryList = () => {
+const CategoryList = () => {
   const { tableProps } = useTable({
     syncWithLocation: true,
   });
@@ -33,3 +33,5 @@ export const CategoryList = () => {
     </List>
   );
 };
+
+export default CategoryList;

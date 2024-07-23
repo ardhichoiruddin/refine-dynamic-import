@@ -2,7 +2,7 @@ import { Create, useForm, useSelect } from "@refinedev/antd";
 import MDEditor from "@uiw/react-md-editor";
 import { Form, Input, Select } from "antd";
 
-export const BlogPostCreate = () => {
+const BlogPostCreate = () => {
   const { formProps, saveButtonProps } = useForm({});
 
   const { selectProps: categorySelectProps } = useSelect({
@@ -69,3 +69,5 @@ export const BlogPostCreate = () => {
     </Create>
   );
 };
+
+export default BlogPostCreate
